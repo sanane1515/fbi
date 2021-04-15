@@ -1,6 +1,6 @@
 ###################################################################
 #                        Import Module
-import json , sys , hashlib , os , time , marshal, getpass
+import json , sys , hashlib , os , time , marshal, getpass , requests
 ###################################################################
 '''
      Facebook Information 
@@ -17,18 +17,7 @@ else:
 	R = ''
 ###################################################################
 #                      Exception
-try:
-	import requests
-except ImportError:
-	print R + '_     _'.center(44)
-	print "o' \.=./ `o".center(44)
-	print '(o o)'.center(44)
-	print 'ooO--(_)--Ooo'.center(44)
-	print W + ' '
-	print ('F B I').center(44)
-	print ' '
-	print "[!] Can't import module 'requests'\n"
-	sys.exit()
+
 ####################################################################
 #                    Set Default encoding
 reload (sys)
